@@ -36,7 +36,7 @@ Note: some guides omit the full path. You need `/imfing/hextra.git`.
 hugo server --bind=0.0.0.0
 ```
 
-Enter `localhost:1313` in your CLI to preview locally.
+Enter `http://localhost:1313/romina-yaps/` in your CLI to preview locally.
 
 ## Deployment
 
