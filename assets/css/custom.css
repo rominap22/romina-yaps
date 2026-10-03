@@ -44,6 +44,20 @@ samp {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='.8'/%3E%3C/svg%3E");
 }
 
+.content img.book-review-cover {
+  float: left;
+  width: 100px;
+  height: 150px;
+  margin: 0.75rem 1rem 1rem 0;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 18%);
+}
+
+.content:has(img.book-review-cover) h3 {
+  clear: both;
+}
+
 .hextra-hero {
   text-align: left;
 }
