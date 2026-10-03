@@ -20,12 +20,17 @@ defaultContentLanguage = "en"
   displayTags = true
 
 [[menu.main]]
-  name = "Blog"
+  name = "Technical Blog"
   pageRef = "/blog"
   weight = 1
 
 [[menu.main]]
+  name = "Book Reviews"
+  pageRef = "/book-reviews"
+  weight = 2
+
+[[menu.main]]
   name = "About"
   pageRef = "/about"
-  weight = 2
+  weight = 3
 

@@ -1,6 +1,7 @@
 ---
 title: "How I Fine-Tuned Llama 3.1 for Semiconductor Knowledge with QLoRA, Hugging Face, and Amazon SageMaker AI"
 date: 2026-07-18
+description: "A walkthrough of fine-tuning Llama 3.1 for semiconductor knowledge using QLoRA and SageMaker."
 tags: ["python", "machine-learning", "artificial-intelligence"]
 categories: ["Engineering"]
 image: "fine-tuning-hf-sm-qlora.jpg"
