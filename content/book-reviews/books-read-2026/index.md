@@ -1,7 +1,7 @@
 ---
 title: "Books I've Read in 2026"
 date: 2026-10-03
-description: "Book reviews and reading notes from 2026."
+description: "Book reviews from 2026."
 tags: ["book-reviews", "reading-2026"]
 ---
 
