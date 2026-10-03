@@ -1,5 +1,5 @@
 ---
-title: Book Reviews
+title: Business
 type: musings
 sidebar:
   open: false

@@ -111,6 +111,6 @@ The only reliable fix is to stop using the standard HF DLC and switch to the TGI
 Consider capacity for instance types in your specific region.
 
 ## References
-[Scale LLM fine-tuning with Hugging Face and Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/scale-llm-fine-tuning-with-hugging-face-and-amazon-sagemaker-ai/)
-[Fine-tune LLM with PyTorch FSDP and QLora on Amazon SageMaker AI using ModelTrainer](https://github.com/brunopistone/amazon-sagemaker-generativeai/blob/main/3_distributed_training/models/meta-llama-3.1-8b/sft_llama_31_8b.ipynb)
+[Scale LLM fine-tuning with Hugging Face and Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/scale-llm-fine-tuning-with-hugging-face-and-amazon-sagemaker-ai/)<br>
+[Fine-tune LLM with PyTorch FSDP and QLora on Amazon SageMaker AI using ModelTrainer](https://github.com/brunopistone/amazon-sagemaker-generativeai/blob/main/3_distributed_training/models/meta-llama-3.1-8b/sft_llama_31_8b.ipynb)<br>
 [From Generic to Domain Expert: Building an Industry-Specific LLM with QLoRA on AWS SageMaker](https://builder.aws.com/content/3GSafwRh9ckJdBVoTmUXslW6zdd/from-generic-to-domain-expert-building-an-industry-specific-llm-with-qlora-on-aws-sagemaker)

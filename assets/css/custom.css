@@ -15,16 +15,21 @@ samp {
 }
 
 :root:not(.dark) body {
-  background-color: #f5f0e6;
+  background-color: #f1f5f9;
   color: #342f28;
 }
 
 :root:not(.dark) .hextra-nav-container-blur {
-  background-color: rgb(245 240 230 / 90%);
+  background-color: rgb(241 245 249 / 90%);
 }
 
 :root:not(.dark) .hextra-sidebar-container {
-  background-color: #f5f0e6;
+  background-color: #f1f5f9;
+}
+
+:root:not(.dark) .hextra-toc > div > div {
+  background-color: #f1f5f9;
+  box-shadow: 0 -12px 16px #f1f5f9;
 }
 
 :root:not(.dark) body::before {
@@ -33,10 +38,10 @@ samp {
   pointer-events: none;
   content: "";
   inset: 0;
-  opacity: 0.2;
+  opacity: 0.13;
   filter: grayscale(1);
   mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='.8'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='.8'/%3E%3C/svg%3E");
 }
 
 .hextra-hero {

@@ -25,12 +25,30 @@ defaultContentLanguage = "en"
   weight = 1
 
 [[menu.main]]
-  name = "Book Reviews"
-  pageRef = "/book-reviews"
+  name = "Musings"
+  identifier = "musings"
   weight = 2
+
+[[menu.main]]
+  name = "Book Reviews"
+  parent = "musings"
+  pageRef = "/book-reviews"
+  weight = 1
+
+[[menu.main]]
+  name = "Health & Fitness"
+  parent = "musings"
+  pageRef = "/health-fitness"
+  weight = 2
+
+[[menu.main]]
+  name = "Business"
+  parent = "musings"
+  pageRef = "/business"
+  weight = 3
 
 [[menu.main]]
   name = "About"
   pageRef = "/about"
-  weight = 3
+  weight = 4
 

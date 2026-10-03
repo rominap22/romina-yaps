@@ -10,7 +10,7 @@ Compiled from my participation in the [Santa Clara Library 26 in 2026 Reading Ch
 ### 1. [Read a book featuring books](https://sclibrary.bibliocommons.com/v2/list/display/1334494639/2915689317)
 
 **Book:** _The Name of the Rose_ by Umberto Eco<br>
-**Who Recommended It:** [Name or source]<br>
+**Who Recommended It:** myself<br>
 **Rating:** [Your rating]/5
 
 [Add your review here.]
@@ -98,7 +98,7 @@ Compiled from my participation in the [Santa Clara Library 26 in 2026 Reading Ch
 ### 12. Read a book by an author you have never read before
 
 **Book:** _The Subtle Art of Not Giving a F***_ by Mark Manson<br>
-**Who Recommended It:** [Name or source]<br>
+**Who Recommended It:** Fiona<br>
 **Rating:** [Your rating]/5
 
 [Add your review here.]
@@ -132,7 +132,7 @@ Shoutout Green Apple Books in SF from where I got this book.
 ### 16. [Read a children's book](https://sclibrary.bibliocommons.com/v2/list/display/1334494639/2919209857)
 
 **Book:** _The Little Prince_ by Antoine de Saint-Exupery<br>
-**Who Recommended It:** [Name or source]<br>
+**Who Recommended It:** Kota<br>
 **Rating:** [Your rating]/5
 
 [Add your review here.]
@@ -147,8 +147,8 @@ Shoutout Green Apple Books in SF from where I got this book.
 
 ### 18. [Read a book that has been adapted to film or television](https://sclibrary.bibliocommons.com/v2/list/display/1334494639/2980042307)
 
-**Book:** _Dune_ by Frank Herbert<br>
-**Who Recommended It:** myself<br>
+**Book:** _The Goldfinch_ by Donna Tartt<br>
+**Who Recommended It:** Afton<br>
 **Rating:** [Your rating]/5
 
 Fun fact, this book is also from Green Apple Books in SF.
