@@ -234,7 +234,7 @@ Shoutout Green Apple Books in SF from where I got this book.
 <img class="book-review-cover" src="images/extreme-ownership.jpg" alt="Cover of Extreme Ownership by Jocko Willink and Leif Babin" loading="lazy" width="100" height="150">
 
 **Book:** _Extreme Ownership_ by Jocko Willink, Leif Babin<br>
-**Who Recommended It:** Marc Andreessen and Leyton<br>
+**Who Recommended It:** Marc Andreessen, Leyton<br>
 **Rating:** [Your rating]/5
 
 [Add your review here.]
