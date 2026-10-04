@@ -187,7 +187,7 @@ Shoutout Green Apple Books in SF from where I got this book.
 **Who Recommended It:** Afton<br>
 **Rating:** [Your rating]/5
 
-Fun fact, this book is also from Green Apple Books in SF.
+[Add your review here.]
 
 ### 19. [Read a book that is a blend of more than one genre](https://sclibrary.bibliocommons.com/v2/list/display/1334494639/2980072157)
 
@@ -246,7 +246,7 @@ Fun fact, this book is also from Green Apple Books in SF.
 <img class="book-review-cover" src="images/buffalo-hunter-hunter.jpg" alt="Cover of The Buffalo Hunter Hunter by Stephen Graham Jones" loading="lazy" width="100" height="150">
 
 **Book:** _The Buffalo Hunter Hunter_ by Stephen Graham Jones<br>
-**Who Recommended It:** [Source or name]<br>
+**Who Recommended It:** Cheryl<br>
 **Rating:** [Your rating]/5
 
 [Add your review here.]
