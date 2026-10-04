@@ -2,7 +2,7 @@
 title: "Books I've Read in 2026"
 date: 2026-10-03
 description: "Book reviews from 2026."
-tags: ["books", "reading"]
+tags: ["reading-list", "reading-challenge", "2026"]
 ---
 
 Compiled from my participation in the [Santa Clara Library 26 in 2026 Reading Challenge](https://SCLIBRARY.ORG/26IN2026). This post gathers one book review for each challenge category.
