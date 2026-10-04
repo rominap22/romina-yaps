@@ -18,5 +18,6 @@
     }
   },
   "forwardPorts":[1313],
+  "appPort":["1313:1313"],
   "postCreateCommand": "git submodule update --init --recursive"
 }

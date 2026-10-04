@@ -2,7 +2,7 @@
 title: "Books I've Read in 2026"
 date: 2026-10-03
 description: "Book reviews from 2026."
-tags: ["book-reviews", "reading-2026"]
+tags: ["books", "reading"]
 ---
 
 Compiled from my participation in the [Santa Clara Library 26 in 2026 Reading Challenge](https://SCLIBRARY.ORG/26IN2026). This post gathers one book review for each challenge category.
@@ -82,7 +82,7 @@ Compiled from my participation in the [Santa Clara Library 26 in 2026 Reading Ch
 <img class="book-review-cover" src="images/atonement.jpg" alt="Cover of Atonement by Ian McEwan" loading="lazy" width="100" height="150">
 
 **Book:** Atonement by Ian McEwan<br>
-**Who Recommended It:** Michelles<br>
+**Who Recommended It:** Michelle<br>
 **Rating:** [Your rating]/5
 
 [Add your review here.]

@@ -14,6 +14,8 @@ This is where I write about what I'm building, learning, and thinking about acro
   {{< card link="blog/hf-sagemakerai-finetuning/" title="Fine-Tuning Llama 3.1 with QLoRA, Hugging Face, and SageMaker AI" subtitle="Domain-specific LLM fine-tuning on AWS" image="blog/hf-sagemakerai-finetuning/fine-tuning-hf-sm-qlora.jpg" >}}
 {{< /cards >}}
 
+{{< tag-cloud "Browse by Tag" >}}
+
 ---
 
 <div class="social-links">

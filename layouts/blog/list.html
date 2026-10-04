@@ -13,6 +13,9 @@
           {{ .Content }}
           {{ partial "custom/content-end.html" . }}
         </div>
+
+        {{ partial "custom/tag-cloud.html" (dict "heading" "Browse by Tag" "page" .) }}
+
         <br>
         <!-- Category filter tiles -->
         <div class="category-filters" id="category-filters">
@@ -63,6 +66,7 @@
         {{- if gt $paginator.TotalPages 1 -}}
           {{ partial "components/blog-pager.html" $paginator }}
         {{- end -}}
+
         {{ partial "custom/page-end.html" . }}
 
         <script>

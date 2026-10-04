@@ -1,0 +1,4 @@
+{{/* Shortcode wrapper so the browse-by-tag cloud can be used in markdown.
+     Usage: {{< tag-cloud >}} or {{< tag-cloud "Browse by Topic" >}} */}}
+{{- $heading := .Get 0 | default "Browse by Tag" -}}
+{{ partial "custom/tag-cloud.html" (dict "heading" $heading) }}

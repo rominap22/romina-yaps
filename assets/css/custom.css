@@ -185,3 +185,72 @@ samp {
   background-color: #14532d;
   color: #86efac;
 }
+
+/* Browse-by-tag cloud */
+.tag-cloud {
+  margin: 2rem 0;
+}
+
+.tag-cloud-heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.tag-cloud-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+  border: 1.5px solid #d1d5db;
+  background: transparent;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.tag-pill:hover {
+  border-color: #6b7280;
+  background-color: #e5e7eb;
+}
+
+.tag-pill-count {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.15rem 0.4rem;
+  border-radius: 9999px;
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.tag-pill:hover .tag-pill-count {
+  background-color: #d1d5db;
+}
+
+:root.dark .tag-pill {
+  border-color: #4b5563;
+}
+
+:root.dark .tag-pill:hover {
+  border-color: #9ca3af;
+  background-color: #374151;
+}
+
+:root.dark .tag-pill-count {
+  background-color: #374151;
+  color: #d1d5db;
+}
+
+:root.dark .tag-pill:hover .tag-pill-count {
+  background-color: #4b5563;
+}

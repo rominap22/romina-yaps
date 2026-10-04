@@ -2,7 +2,7 @@
 title: "How I Built This Site"
 date: 2026-07-12
 description: "Hugo + Hextra + Dev Containers + GitHub Pages + Claude Code."
-tags: ["hugo", "github-pages", "claude-code", "devops", "containers", "github-actions", "web-development"]
+tags: ["hugo", "github-pages", "claude-code", "devops", "containers", "ci-cd"]
 categories: ["Engineering"]
 ---
 

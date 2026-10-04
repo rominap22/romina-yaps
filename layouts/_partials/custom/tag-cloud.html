@@ -1,0 +1,70 @@
+{{/*
+  Browse-by-tag cloud. Renders tags as clickable pills linking to their tag
+  page, with a post count.
+
+  By default the cloud is SCOPED to a single section: when a page context is
+  passed in, only tags used by that page's regular pages (its section's posts)
+  are shown, and counts reflect how many of those posts carry each tag. This
+  keeps the Technical Blog cloud from showing Musings tags and vice versa.
+
+  The pill label reflects the tag's original casing exactly as written in a
+  post's front matter. Hugo keys taxonomies by a normalized (lowercased) term,
+  so we recover the original string from the front matter of a post that uses
+  the tag.
+
+  Optional dict params:
+    - heading: heading text (default "Browse by Tag"). Pass "" to omit.
+    - page: the section/list page to scope tags to. If omitted, falls back to
+      the site-wide "tags" taxonomy (all sections).
+*/}}
+{{- $heading := "Browse by Tag" -}}
+{{- $page := site -}}
+{{- $scoped := false -}}
+{{- if reflect.IsMap . -}}
+  {{- $heading = .heading | default "Browse by Tag" -}}
+  {{- with .page -}}{{- $page = . -}}{{- $scoped = true -}}{{- end -}}
+{{- end -}}
+
+{{- /* Build an ordered map of normalized-tag -> (dict label count) */ -}}
+{{- $tags := dict -}}
+{{- $labels := dict -}}
+{{- $counts := dict -}}
+
+{{- if $scoped -}}
+  {{- range $page.RegularPages -}}
+    {{- range .Params.tags -}}
+      {{- $key := urlize . -}}
+      {{- $labels = merge $labels (dict $key .) -}}
+      {{- $counts = merge $counts (dict $key (add (int (index $counts $key | default 0)) 1)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- with site.Taxonomies.tags -}}
+    {{- range $name, $taxonomy := . -}}
+      {{- $label := $name -}}
+      {{- with (index $taxonomy.Pages 0) -}}
+        {{- range .Params.tags -}}
+          {{- if eq (urlize .) $name -}}{{- $label = . -}}{{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $labels = merge $labels (dict $name $label) -}}
+      {{- $counts = merge $counts (dict $name (len $taxonomy)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $labels -}}
+  <div class="tag-cloud">
+    {{- if $heading }}<h3 class="tag-cloud-heading">{{ $heading }}</h3>{{ end -}}
+    <div class="tag-cloud-list">
+      {{- range $key, $label := $labels -}}
+        {{- with site.GetPage (printf "/tags/%s" $key) -}}
+          <a class="tag-pill" href="{{ .RelPermalink }}">
+            <span class="tag-pill-name">#{{ $label }}</span>
+            <span class="tag-pill-count">{{ index $counts $key }}</span>
+          </a>
+        {{- end -}}
+      {{- end -}}
+    </div>
+  </div>
+{{- end -}}
