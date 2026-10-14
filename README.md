@@ -79,6 +79,15 @@ devcontainer exec --workspace-folder ~/romina-yaps \
   hugo server --bind 0.0.0.0 --port 1313 --baseURL http://localhost:1313/romina-yaps/ --appendPort=false
 ```
 
+#### Kiro compatibility change
+
+To make the Dev Container work smoothly in Kiro, I added the Kiro extension
+(`artizo.kiro`) to `customizations.vscode.extensions` in
+[`.devcontainer/devcontainer.json`](.devcontainer/devcontainer.json). Because Kiro is
+built on VS Code, it reads the same `customizations.vscode` block, so the extension is
+installed automatically whenever the container is (re)built — no manual setup needed
+inside the container.
+
 ---
 
 ## Troubleshooting

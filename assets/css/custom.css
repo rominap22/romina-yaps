@@ -254,3 +254,91 @@ samp {
 :root.dark .tag-pill:hover .tag-pill-count {
   background-color: #4b5563;
 }
+
+/* On-hover term definitions (def shortcode) */
+.def-term {
+  position: relative;
+  cursor: help;
+  outline: none;
+}
+
+.def-term-label {
+  border-bottom: 1.5px dotted #6b7280;
+  font-weight: 600;
+}
+
+.def-term:hover .def-term-label,
+.def-term:focus .def-term-label,
+.def-term:focus-visible .def-term-label {
+  border-bottom-color: #1a1a1a;
+}
+
+.def-tooltip {
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%) translateY(0.25rem);
+  z-index: 50;
+  width: max-content;
+  max-width: min(22rem, 90vw);
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.45;
+  text-align: left;
+  color: #f1f5f9;
+  background-color: #1a1a1a;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 25%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+}
+
+/* Little arrow pointing down to the term */
+.def-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #1a1a1a;
+}
+
+.def-term:hover .def-tooltip,
+.def-term:focus .def-tooltip,
+.def-term:focus-visible .def-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+.def-tooltip p {
+  margin: 0;
+}
+
+.def-tooltip p + p {
+  margin-top: 0.4rem;
+}
+
+:root.dark .def-term-label {
+  border-bottom-color: #9ca3af;
+}
+
+:root.dark .def-term:hover .def-term-label,
+:root.dark .def-term:focus .def-term-label,
+:root.dark .def-term:focus-visible .def-term-label {
+  border-bottom-color: #e5e7eb;
+}
+
+:root.dark .def-tooltip {
+  color: #1a1a1a;
+  background-color: #e5e7eb;
+}
+
+:root.dark .def-tooltip::after {
+  border-top-color: #e5e7eb;
+}

@@ -1,0 +1,23 @@
+{{/*
+  Inline on-hover (and on-focus / on-tap) definition for a term.
+
+  Reusable across all blog posts: wrap any term whose meaning you want to
+  reveal in a tooltip. The definition shows on mouse hover, on keyboard focus
+  (the term is focusable), and on tap on touch devices.
+
+  Usage (paired shortcode):
+    {{< def term="Decoder" >}}Component of a neural network for generating output data.{{< /def >}}
+
+  Optional:
+    term  - the visible word/phrase (required). Falls back to the inner text
+            if omitted, but passing it explicitly reads best.
+
+  The inner content is the definition. It supports markdown.
+*/}}
+{{- $term := .Get "term" -}}
+{{- $def := .Inner | .Page.RenderString -}}
+{{- if not $term -}}{{- $term = $def -}}{{- end -}}
+<span class="def-term" tabindex="0" role="button" aria-label="Definition of {{ $term }}">
+  <span class="def-term-label">{{ $term }}</span>
+  <span class="def-tooltip" role="tooltip">{{ $def }}</span>
+</span>

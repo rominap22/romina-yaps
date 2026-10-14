@@ -13,11 +13,12 @@
     "vscode": {
       "extensions": [
         "koichisasada.vscode-hugo",
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "artizo.kiro"
       ]
     }
   },
   "forwardPorts":[1313],
   "appPort":["1313:1313"],
-  "postCreateCommand": "git submodule update --init --recursive"
+  "postCreateCommand": "git config --global --add safe.directory /workspaces/romina-yaps && git submodule update --init --recursive"
 }
